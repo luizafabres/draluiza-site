@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dra. Luiza Fabres do Carmo – Hepatologista e Gastroenterologista</title>
+  <meta name="description" content="Atendimento em gastroenterologia e hepatologia com foco em saúde digestiva e doenças do fígado.">
+
+  <style>
+    :root {
+      --azul-principal: #2f6f8f;
+      --azul-escuro: #1f4f68;
+      --azul-claro: #eaf4f8;
+      --destaque: #5e9bb5;
+      --texto: #2d2d2d;
+      --texto-suave: #666;
+      --fundo: #fcf9f7;
+      --branco: #ffffff;
+      --sombra: 0 8px 24px rgba(0, 0, 0, 0.08);
+      --raio: 18px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+      color: var(--texto);
+      background: var(--fundo);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.96);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+      backdrop-filter: blur(8px);
+    }
+
+    .nav-area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 78px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 26px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--azul-escuro);
+      font-weight: bold;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--destaque);
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    h1, h2, h3 {
+      color: var(--azul-escuro);
+      line-height: 1.3;
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 22px;
+      text-align: center;
+    }
+
+    h3 {
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: var(--texto);
+    }
+
+    .subtitulo {
+      font-size: 1.08rem;
+      color: var(--texto-suave);
+      max-width: 780px;
+      margin: 0 auto 20px;
+      text-align: center;
+    }
+
+    .hero {
+      background: linear-gradient(180deg, #eef7fb 0%, #fcf9f7 100%);
+      padding-top: 85px;
+      padding-bottom: 85px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-img-box {
+      text-align: center;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 340px;
+      border-radius: 24px;
+      box-shadow: var(--sombra);
+      border: 6px solid #fff;
+    }
+
+    .hero-text {
+      text-align: left;
+    }
+
+    .hero-destaque {
+      display: inline-block;
+      background: var(--azul-claro);
+      color: var(--azul-escuro);
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .hero-text p {
+      font-size: 1.05rem;
+      color: #4a4a4a;
+    }
+
+    .botoes {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      font-size: 15px;
+    }
+
+    .btn-principal {
+      background: var(--azul-principal);
+      color: white;
+    }
+
+    .btn-principal:hover {
+      background: var(--azul-escuro);
+      transform: translateY(-2px);
+    }
+
+    .btn-secundario {
+      background: white;
+      color: var(--azul-escuro);
+      border: 1px solid #c9dce5;
+    }
+
+    .btn-secundario:hover {
+      background: var(--azul-claro);
+      transform: translateY(-2px);
+    }
+
+    .card {
+      background: var(--branco);
+      border-radius: var(--raio);
+      box-shadow: var(--sombra);
+      padding: 32px;
+    }
+
+    .sobre .card,
+    .contato .card {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .registro {
+      margin-top: 24px;
+      background: var(--azul-claro);
+      padding: 18px 20px;
+      border-radius: 14px;
+      color: var(--azul-escuro);
+    }
+
+    .servicos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 28px;
+    }
+
+    .item-box {
+      background: white;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: var(--sombra);
+      transition: 0.3s;
+    }
+
+    .item-box:hover {
+      transform: translateY(-4px);
+    }
+
+    .item-box h3 {
+      font-size: 1.1rem;
+      color: var(--azul-principal);
+    }
+
+    .item-box p {
+      font-size: 0.98rem;
+      color: var(--texto-suave);
+      margin-bottom: 0;
+    }
+
+    .blog {
+      background: #f7fbfd;
+    }
+
+    .blog-lista {
+      max-width: 900px;
+      margin: 0 auto 30px;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+
+    .blog-lista a {
+      display: block;
+      background: white;
+      padding: 14px 18px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: var(--azul-escuro);
+      font-weight: bold;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+
+    .blog-lista a:hover {
+      background: var(--azul-claro);
+    }
+
+    .posts-detalhados {
+      display: grid;
+      gap: 22px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .post-card {
+      background: white;
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: var(--sombra);
+    }
+
+    .post-card h3 {
+      color: var(--azul-principal);
+    }
+
+    .post-card p {
+      margin-bottom: 0;
+      color: var(--texto-suave);
+    }
+
+    .contato-info {
+      text-align: center;
+    }
+
+    .contato-info p {
+      font-size: 1.03rem;
+    }
+
+    .mapa-btn {
+      margin-top: 12px;
+    }
+
+    footer {
+      background: var(--azul-escuro);
+      color: white;
+      text-align: center;
+      padding: 28px 20px;
+      margin-top: 30px;
+    }
+
+    footer p {
+      margin: 0;
+      color: white;
+      font-size: 0.95rem;
+    }
+
+    .whatsapp-fixo {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 64px;
+      height: 64px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+      z-index: 99999;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .whatsapp-fixo:hover {
+      transform: scale(1.08);
+      background: #20ba5a;
+    }
+
+    .whatsapp-fixo svg {
+      width: 34px;
+      height: 34px;
+      display: block;
+      fill: #ffffff;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .servicos-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-text {
+        text-align: center;
+      }
+
+      .botoes {
+        justify-content: center;
+      }
+
+      h1 {
+        font-size: 1.9rem;
+      }
+
+      h2 {
+        font-size: 1.7rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .whatsapp-fixo {
+        width: 58px;
+        height: 58px;
+        right: 14px;
+        bottom: 14px;
+      }
+
+      .whatsapp-fixo svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .nav-area {
+        padding: 12px 0;
+      }
+
+      nav ul {
+        gap: 14px;
+      }
+
+      nav a {
+        font-size: 14px;
+      }
+
+      .card,
+      .item-box,
+      .post-card {
+        padding: 22px;
+      }
+
+      section {
+        padding: 55px 0;
+      }
+
+      h1 {
+        font-size: 1.65rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav-area">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div class="hero-img-box">
+      <img src="foto.jpg" alt="Dra. Luiza Fabres do Carmo">
+    </div>
+
+    <div class="hero-text">
+      <span class="hero-destaque">15 anos de experiência • Atendimento humanizado</span>
+      <h1>Bem-vindo ao consultório da Dra. Luiza Fabres do Carmo</h1>
+      <p>
+        Cuidado especializado em <strong>saúde digestiva e doenças do fígado</strong>,
+        com foco em prevenção, diagnóstico e tratamento individualizado.
+      </p>
+      <p>
+        Consulta com escuta atenta, acolhimento e tempo dedicado ao paciente.
+      </p>
+
+      <div class="botoes">
+        <a href="https://www.draluizafabres.com/" target="_blank" class="btn btn-principal">
+          &#128197; Agendar consulta
+        </a>
+
+        <a href="https://wa.me/5527995065091" target="_blank" class="btn btn-secundario">
+          &#128172; Falar no WhatsApp
+        </a>
+
+        <a href="https://consultoriodraluizafabresdocarmo.blogspot.com/" target="_blank" class="btn btn-secundario">
+          &#128214; Acesse nosso Blog
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" class="sobre">
+  <div class="container">
+    <h2>Sobre a Dra. Luiza Fabres do Carmo</h2>
+    <p class="subtitulo">
+      Atendimento médico com conhecimento técnico, escuta cuidadosa e compromisso com o bem-estar do paciente.
+    </p>
+
+    <div class="card">
+      <p>
+        Sou médica especialista em <strong>gastroenterologia e hepatologia</strong>,
+        com mestrado pela Universidade Federal de São Paulo (UNIFESP).
+        Atuo há mais de 10 anos na área, com foco especial nas doenças do fígado.
+      </p>
+
+      <p>
+        Minha prática é baseada em um atendimento <strong>humanizado, acolhedor e sem pressa</strong>,
+        com consultas de aproximadamente 1 hora, permitindo avaliação cuidadosa de cada caso.
+      </p>
+
+      <p>
+        Também atuo como professora na formação de novos médicos em cursos de graduação e pós-graduação.
+      </p>
+
+      <div class="registro">
+        <strong>Registro profissional:</strong><br>
+        CRM-ES 10444<br>
+        RQE 10576 – Gastroenterologia<br>
+        RQE 11334 – Hepatologia
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="container">
+    <h2>Serviços</h2>
+    <p class="subtitulo">
+      Atendimento voltado à prevenção, diagnóstico e tratamento de doenças do aparelho digestivo e do fígado.
+    </p>
+
+    <div class="servicos-grid">
+      <div class="item-box">
+        <h3>Doenças do fígado</h3>
+        <p>Hepatites, esteatose hepática, cirrose e acompanhamento especializado.</p>
+      </div>
+
+      <div class="item-box">
+        <h3>Refluxo e gastrite</h3>
+        <p>Investigação de azia, queimação, dor abdominal e desconforto digestivo.</p>
+      </div>
+
+      <div class="item-box">
+        <h3>Intestino irritável</h3>
+        <p>Avaliação de sintomas intestinais persistentes e tratamento individualizado.</p>
+      </div>
+
+      <div class="item-box">
+        <h3>Constipação e diarreia</h3>
+        <p>Investigação clínica de alterações do hábito intestinal.</p>
+      </div>
+
+      <div class="item-box">
+        <h3>Intolerâncias alimentares</h3>
+        <p>Acompanhamento em doença celíaca e suspeitas de sensibilidade alimentar.</p>
+      </div>
+
+      <div class="item-box">
+        <h3>Check-up digestivo</h3>
+        <p>Prevenção, rastreio e acompanhamento da saúde digestiva e hepática.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="blog" class="blog">
+  <div class="container">
+    <h2>Como Cuidar da Saúde Digestiva e Hepática</h2>
+    <p class="subtitulo">
+      Conteúdos informativos para orientar pacientes e promover prevenção em saúde.
+    </p>
+
+    <ul class="blog-lista">
+      <li><a href="#prevencao">Como prevenir doenças do fígado</a></li>
+      <li><a href="#alimentos">Alimentos que ajudam na digestão</a></li>
+      <li><a href="#gastrite">Sintomas de gastrite e refluxo</a></li>
+      <li><a href="#hepatite">Hepatite</a></li>
+      <li><a href="#exames">Exames do fígado</a></li>
+    </ul>
+
+    <div class="posts-detalhados">
+      <div class="post-card" id="prevencao">
+        <h3>Como prevenir doenças do fígado</h3>
+        <p>
+          Evite álcool em excesso, mantenha alimentação equilibrada, pratique exercícios e faça exames regulares.
+          O acompanhamento médico é importante para identificar alterações ainda no início.
+        </p>
+      </div>
+
+      <div class="post-card" id="alimentos">
+        <h3>Alimentos que ajudam na digestão</h3>
+        <p>
+          Frutas, fibras, probióticos e boa hidratação ajudam no funcionamento intestinal e contribuem
+          para uma rotina digestiva mais equilibrada.
+        </p>
+      </div>
+
+      <div class="post-card" id="gastrite">
+        <h3>Sintomas de gastrite e refluxo</h3>
+        <p>
+          Azia, queimação, dor abdominal e sensação de estufamento são sinais frequentes.
+          Quando persistentes, merecem avaliação médica.
+        </p>
+      </div>
+
+      <div class="post-card" id="hepatite">
+        <h3>Hepatite</h3>
+        <p>
+          Trata-se de uma condição que pode evoluir de forma silenciosa. A prevenção inclui vacinação,
+          cuidados específicos e acompanhamento profissional.
+        </p>
+      </div>
+
+      <div class="post-card" id="exames">
+        <h3>Exames do fígado</h3>
+        <p>
+          Exames laboratoriais e de imagem ajudam na investigação e no diagnóstico precoce
+          de várias doenças hepáticas.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="contato">
+  <div class="container">
+    <h2>Contato</h2>
+    <p class="subtitulo">
+      Agende sua consulta e cuide da sua saúde digestiva e hepática com atendimento especializado.
+    </p>
+
+    <div class="card contato-info">
+      <p><strong>WhatsApp:</strong> (27) 99506-5091</p>
+
+      <p>
+        <strong>Endereço:</strong><br>
+        Rua João Pessoa de Matos, 530 - sala 603<br>
+        Edifício Premium Office Tower – Praia da Costa – Vila Velha/ES
+      </p>
+
+      <div class="mapa-btn">
+        <a href="https://www.google.com/maps?q=Rua+João+Pessoa+de+Matos,+530,+Vila+Velha+ES" target="_blank" class="btn btn-principal">
+          Ver no mapa
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Dra. Luiza Fabres do Carmo – Todos os direitos reservados</p>
+</footer>
+
+<a href="https://wa.me/5527995065091?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Luiza"
+   target="_blank"
+   class="whatsapp-fixo"
+   aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M20.52 3.48A11.86 11.86 0 0 0 12.07 0C5.53 0 .19 5.34.19 11.9c0 2.1.55 4.14 1.6 5.95L0 24l6.35-1.66a11.9 11.9 0 0 0 5.72 1.46h.01c6.54 0 11.88-5.34 11.88-11.9 0-3.18-1.24-6.16-3.44-8.42zM12.08 21.8h-.01a9.9 9.9 0 0 1-5.05-1.39l-.36-.21-3.77.99 1.01-3.68-.24-.38a9.9 9.9 0 0 1-1.52-5.24c0-5.46 4.45-9.9 9.92-9.9 2.65 0 5.14 1.03 7.01 2.9a9.84 9.84 0 0 1 2.9 7c0 5.46-4.45 9.9-9.9 9.9zm5.43-7.37c-.3-.15-1.77-.87-2.05-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.08-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.01-1.04 2.47s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.48.71.31 1.27.5 1.7.64.71.22 1.36.19 1.87.11.57-.08 1.77-.72 2.02-1.42.25-.69.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35z"/>
+  </svg>
+</a>
+
+</body>
+</html>
