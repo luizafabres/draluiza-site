@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dra. Luiza Fabres do Carmo – Hepatologista e Gastroenterologista</title>
-  <meta name="description" content="Atendimento em gastroenterologia e hepatologia com foco em saúde digestiva e doenças do fígado.">
+  <title>Dra. Luiza Fabres do Carmo | Gastroenterologia e Hepatologia</title>
+  <meta name="description" content="Atendimento em gastroenterologia e hepatologia com foco em saúde digestiva, doenças do fígado e cuidado individualizado em Vila Velha/ES.">
 
   <style>
     :root {
       --azul-principal: #2f6f8f;
       --azul-escuro: #1f4f68;
       --azul-claro: #eaf4f8;
+      --azul-suave: #f4f9fb;
+      --azul-muito-suave: #f8fcfe;
       --destaque: #5e9bb5;
       --texto: #2d2d2d;
       --texto-suave: #666;
       --fundo: #fcf9f7;
       --branco: #ffffff;
-      --sombra: 0 8px 24px rgba(0, 0, 0, 0.08);
+      --sombra: 0 10px 28px rgba(0, 0, 0, 0.08);
       --raio: 18px;
     }
 
@@ -39,7 +41,7 @@
 
     .container {
       width: 100%;
-      max-width: 1120px;
+      max-width: 1140px;
       margin: 0 auto;
       padding: 0 20px;
     }
@@ -64,7 +66,7 @@
       list-style: none;
       display: flex;
       justify-content: center;
-      gap: 26px;
+      gap: 24px;
       flex-wrap: wrap;
     }
 
@@ -81,7 +83,7 @@
     }
 
     section {
-      padding: 70px 0;
+      padding: 72px 0;
     }
 
     h1, h2, h3 {
@@ -90,43 +92,43 @@
     }
 
     h1 {
-      font-size: 2.3rem;
+      font-size: 2.5rem;
       margin-bottom: 18px;
     }
 
     h2 {
       font-size: 2rem;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
       text-align: center;
     }
 
     h3 {
-      margin-bottom: 12px;
+      font-size: 1.15rem;
+      margin-bottom: 10px;
     }
 
     p {
       margin-bottom: 16px;
-      color: var(--texto);
     }
 
     .subtitulo {
       font-size: 1.08rem;
       color: var(--texto-suave);
-      max-width: 780px;
-      margin: 0 auto 20px;
+      max-width: 840px;
+      margin: 0 auto 24px;
       text-align: center;
     }
 
     .hero {
       background: linear-gradient(180deg, #eef7fb 0%, #fcf9f7 100%);
-      padding-top: 85px;
-      padding-bottom: 85px;
+      padding-top: 86px;
+      padding-bottom: 86px;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: 40px;
+      grid-template-columns: 0.95fr 1.2fr;
+      gap: 42px;
       align-items: center;
     }
 
@@ -136,14 +138,10 @@
 
     .hero img {
       width: 100%;
-      max-width: 340px;
-      border-radius: 24px;
+      max-width: 350px;
+      border-radius: 26px;
       box-shadow: var(--sombra);
       border: 6px solid #fff;
-    }
-
-    .hero-text {
-      text-align: left;
     }
 
     .hero-destaque {
@@ -166,7 +164,7 @@
       display: flex;
       gap: 14px;
       flex-wrap: wrap;
-      margin-top: 22px;
+      margin-top: 24px;
     }
 
     .btn {
@@ -204,103 +202,92 @@
       background: var(--branco);
       border-radius: var(--raio);
       box-shadow: var(--sombra);
-      padding: 32px;
+      padding: 34px;
     }
 
     .sobre .card,
     .contato .card {
-      max-width: 900px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .consulta .card {
+      max-width: 1040px;
       margin: 0 auto;
     }
 
     .registro {
-      margin-top: 24px;
+      margin-top: 22px;
       background: var(--azul-claro);
       padding: 18px 20px;
       border-radius: 14px;
       color: var(--azul-escuro);
-    }
-
-    .servicos-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-      margin-top: 28px;
-    }
-
-    .item-box {
-      background: white;
-      border-radius: 18px;
-      padding: 24px;
-      box-shadow: var(--sombra);
-      transition: 0.3s;
-    }
-
-    .item-box:hover {
-      transform: translateY(-4px);
-    }
-
-    .item-box h3 {
-      font-size: 1.1rem;
-      color: var(--azul-principal);
-    }
-
-    .item-box p {
-      font-size: 0.98rem;
-      color: var(--texto-suave);
-      margin-bottom: 0;
+      text-align: center;
     }
 
     .blog {
       background: #f7fbfd;
     }
 
-    .blog-lista {
-      max-width: 900px;
-      margin: 0 auto 30px;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      gap: 12px;
+    .consulta {
+      background: var(--azul-suave);
     }
 
-    .blog-lista a {
-      display: block;
-      background: white;
-      padding: 14px 18px;
-      border-radius: 14px;
-      text-decoration: none;
-      color: var(--azul-escuro);
-      font-weight: bold;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.05);
-      transition: 0.3s;
-    }
-
-    .blog-lista a:hover {
-      background: var(--azul-claro);
+    .consultorio {
+      background: #ffffff;
     }
 
     .posts-detalhados {
       display: grid;
-      gap: 22px;
-      max-width: 900px;
+      gap: 24px;
+      max-width: 940px;
       margin: 0 auto;
     }
 
     .post-card {
       background: white;
       border-radius: 18px;
-      padding: 26px;
+      padding: 28px;
       box-shadow: var(--sombra);
     }
 
-    .post-card h3 {
-      color: var(--azul-principal);
+    .post-card p:last-child {
+      margin-bottom: 0;
     }
 
-    .post-card p {
-      margin-bottom: 0;
+    .consultorio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 28px;
+    }
+
+    .foto-box {
+      background: white;
+      border-radius: 18px;
+      padding: 12px;
+      box-shadow: var(--sombra);
+      transition: 0.3s;
+    }
+
+    .foto-box:hover {
+      transform: translateY(-4px);
+    }
+
+    .foto-box img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 14px;
+      display: block;
+      background: #eef4f7;
+    }
+
+    .foto-legenda {
+      padding: 14px 8px 4px;
+      text-align: center;
       color: var(--texto-suave);
+      font-size: 0.96rem;
     }
 
     .contato-info {
@@ -313,6 +300,52 @@
 
     .mapa-btn {
       margin-top: 12px;
+    }
+
+    .accordion-mini {
+      margin: 18px 0 24px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .accordion-mini details {
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+    }
+
+    .accordion-mini summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 16px 20px;
+      font-weight: bold;
+      color: var(--azul-escuro);
+      position: relative;
+    }
+
+    .accordion-mini summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .accordion-mini summary::after {
+      content: "+";
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 22px;
+      color: var(--azul-principal);
+    }
+
+    .accordion-mini details[open] summary::after {
+      content: "−";
+    }
+
+    .accordion-mini details p {
+      padding: 0 20px 18px;
+      margin: 0;
+      color: var(--texto-suave);
     }
 
     footer {
@@ -360,7 +393,7 @@
 
     @media (max-width: 900px) {
       .hero-grid,
-      .servicos-grid {
+      .consultorio-grid {
         grid-template-columns: 1fr;
       }
 
@@ -373,11 +406,11 @@
       }
 
       h1 {
-        font-size: 1.9rem;
+        font-size: 2rem;
       }
 
       h2 {
-        font-size: 1.7rem;
+        font-size: 1.75rem;
       }
     }
 
@@ -409,17 +442,16 @@
       }
 
       .card,
-      .item-box,
       .post-card {
         padding: 22px;
       }
 
       section {
-        padding: 55px 0;
+        padding: 56px 0;
       }
 
       h1 {
-        font-size: 1.65rem;
+        font-size: 1.7rem;
       }
     }
   </style>
@@ -431,10 +463,13 @@
   <div class="container nav-area">
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
+        <li><a href="#home">Início</a></li>
         <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#blog">Blog</a></li>
+                  <li><a href="#especialidades">Especialidades</a></li>
+        <li><a href="#publicacoes">Publicações</a></li>
+        <li><a href="#consulta">Atendimento</a></li>
+        <li><a href="#blog">Conteúdos</a></li>
+        <li><a href="#consultorio">Consultório</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
@@ -448,55 +483,380 @@
     </div>
 
     <div class="hero-text">
-      <span class="hero-destaque">15 anos de experiência • Atendimento humanizado</span>
-      <h1>Bem-vindo ao consultório da Dra. Luiza Fabres do Carmo</h1>
+      <span class="hero-destaque">Gastroenterologia e Hepatologia • Atendimento humanizado • Consulta com tempo dedicado</span>
+      <h1>Dra. Luiza Fabres do Carmo</h1>
       <p>
-        Cuidado especializado em <strong>saúde digestiva e doenças do fígado</strong>,
-        com foco em prevenção, diagnóstico e tratamento individualizado.
+        Médica gastroenterologista e hepatologista com atuação voltada ao cuidado integral do aparelho digestivo e das doenças do fígado.
       </p>
       <p>
-        Consulta com escuta atenta, acolhimento e tempo dedicado ao paciente.
+        Um atendimento pensado para quem busca escuta atenta, avaliação cuidadosa e um plano de cuidado individualizado, com explicações claras e tratamento ajustado à realidade de cada paciente.
       </p>
 
-      <div class="botoes">
-        <a href="https://www.draluizafabres.com/" target="_blank" class="btn btn-principal">
-          &#128197; Agendar consulta
-        </a>
+<div class="botoes">
+  <a href="https://wa.me/5527995065091" target="_blank" class="btn btn-principal">
+    Agende sua consulta pelo WhatsApp
+  </a>
 
-        <a href="https://wa.me/5527995065091" target="_blank" class="btn btn-secundario">
-          &#128172; Falar no WhatsApp
-        </a>
+  <a href="https://www.draluizafabres.com/" target="_blank" class="btn btn-secundario">
+    Doctoralia
+  </a>
 
-        <a href="https://consultoriodraluizafabresdocarmo.blogspot.com/" target="_blank" class="btn btn-secundario">
-          &#128214; Acesse nosso Blog
-        </a>
-      </div>
+  <a href="https://consultoriodraluizafabresdocarmo.blogspot.com/" target="_blank" class="btn btn-secundario">
+    Nosso Blog
+  </a>
+
+  <a href="https://instagram.com/luizafabres?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw" target="_blank" class="btn btn-secundario">
+    Instagram
+  </a>
+</div>
+
     </div>
   </div>
 </section>
 
 <section id="sobre" class="sobre">
   <div class="container">
-    <h2>Sobre a Dra. Luiza Fabres do Carmo</h2>
+    <h2>Sobre a Dra. Luiza Fabres</h2>
     <p class="subtitulo">
-      Atendimento médico com conhecimento técnico, escuta cuidadosa e compromisso com o bem-estar do paciente.
+      Formação sólida, experiência clínica e um cuidado médico centrado nas necessidades de cada paciente.
     </p>
 
     <div class="card">
       <p>
-        Sou médica especialista em <strong>gastroenterologia e hepatologia</strong>,
-        com mestrado pela Universidade Federal de São Paulo (UNIFESP).
-        Atuo há mais de 10 anos na área, com foco especial nas doenças do fígado.
+        A Dra. Luiza Fabres é médica <strong>gastroenterologista e hepatologista</strong>, formada há 15 anos, com residência médica pela <strong>Universidade Federal de São Paulo (UNIFESP)</strong> e professora de Medicina da <strong>EMESCAM</strong>.
       </p>
 
       <p>
-        Minha prática é baseada em um atendimento <strong>humanizado, acolhedor e sem pressa</strong>,
-        com consultas de aproximadamente 1 hora, permitindo avaliação cuidadosa de cada caso.
+        Possui ampla experiência no cuidado integral do aparelho digestivo e das doenças do fígado, atuando no diagnóstico, acompanhamento e definição de condutas médicas personalizadas para diferentes quadros clínicos.
       </p>
 
       <p>
-        Também atuo como professora na formação de novos médicos em cursos de graduação e pós-graduação.
+        Na área de hepatologia, realiza a avaliação e o acompanhamento das doenças hepáticas, incluindo o estadiamento do fígado, que permite identificar o grau de comprometimento do órgão e orientar o melhor plano de tratamento e monitoramento.
       </p>
+
+
+<section id="especialidades" class="especialidades">
+  <div class="container">
+    <h2>Entenda as especialidades</h2>
+    <p class="subtitulo">
+      Gastroenterologia e hepatologia estão relacionadas, mas cada uma cuida de áreas específicas da saúde digestiva.
+    </p>
+
+    <div class="card">
+      <p>
+        A <strong>gastroenterologia</strong> é a especialidade médica voltada ao diagnóstico e tratamento das doenças do aparelho digestivo. Isso inclui alterações do <strong>esôfago, estômago, intestino, pâncreas</strong> e outras estruturas ligadas à digestão. Queixas como refluxo, gastrite, dor abdominal, distensão, alteração do funcionamento intestinal, constipação e diarreia estão entre os motivos mais comuns de avaliação nessa área.
+      </p>
+
+      <p>
+        Já a <strong>hepatologia</strong> é a área dedicada ao cuidado das <strong>doenças do fígado</strong> e das vias biliares. Envolve a investigação, o acompanhamento e o tratamento de quadros como <strong>gordura no fígado, hepatites, cirrose, doenças metabólicas, doenças colestáticas e nódulos hepáticos</strong>.
+      </p>
+
+      <p>
+        Embora sejam especialidades diferentes, elas se complementam. Muitas vezes, sintomas digestivos e alterações hepáticas precisam ser avaliados de forma integrada, para que o paciente receba um diagnóstico mais preciso e um plano de cuidado mais adequado.
+      </p>
+
+      <p>
+        O acompanhamento com uma médica que atua nas duas áreas permite uma visão mais ampla da saúde digestiva e hepática, favorecendo uma avaliação mais completa e condutas mais individualizadas.
+      </p>
+    </div>
+  </div>
+
+
+</section>
+      <p>
+        Como hepatologista, as principais condições acompanhadas são:
+      </p>
+
+      <div class="accordion-mini">
+        <details>
+          <summary>Gordura no fígado (esteatose hepática)</summary>
+          <p>
+            A esteatose hepática é uma condição frequente e muitas vezes silenciosa. Em alguns casos, pode evoluir com inflamação, fibrose e até cirrose quando não é acompanhada adequadamente. A avaliação médica ajuda a identificar o grau de comprometimento do fígado e a definir a melhor estratégia de acompanhamento.
+          </p>
+        </details>
+
+        <details>
+          <summary>Hepatites virais (A, B e C)</summary>
+          <p>
+            As hepatites virais podem ter comportamentos diferentes e nem sempre provocam sintomas logo no início. O diagnóstico correto e o seguimento especializado são importantes para avaliar atividade da doença, risco de progressão e necessidade de tratamento ou monitoramento contínuo.
+          </p>
+        </details>
+
+        <details>
+          <summary>Hepatite autoimune</summary>
+          <p>
+            Na hepatite autoimune, o sistema imunológico passa a atacar o fígado. O acompanhamento especializado é fundamental para controlar a inflamação, preservar a função hepática e evitar a progressão da doença.
+          </p>
+        </details>
+
+        <details>
+          <summary>Cirrose hepática</summary>
+          <p>
+            A cirrose é um estágio mais avançado de comprometimento do fígado e exige acompanhamento cuidadoso. Com avaliação adequada, é possível monitorar a evolução da doença, prevenir complicações e organizar um plano de cuidado individualizado.
+          </p>
+        </details>
+
+        <details>
+          <summary>Doenças metabólicas e colestáticas</summary>
+          <p>
+            Esse grupo inclui doenças como hemocromatose e colangite biliar primária. São condições que precisam de diagnóstico preciso e acompanhamento contínuo para melhor controle e prevenção de danos progressivos ao fígado.
+          </p>
+        </details>
+
+        <details>
+          <summary>Nódulos hepáticos</summary>
+          <p>
+            A presença de nódulos hepáticos deve ser avaliada com atenção. Nem todo nódulo representa gravidade, mas é importante investigar corretamente, acompanhar quando necessário e definir a conduta mais adequada para cada caso.
+          </p>
+        </details>
+      </div>
+
+      <p>
+        Na gastroenterologia, a Dra. Luiza Fabres atua no diagnóstico e tratamento de doenças do esôfago, estômago, intestino e pâncreas, tanto orgânicas quanto funcionais, sempre buscando uma abordagem prática, clara e individualizada.
+      </p>
+
+          </div>
+  </div>
+</section>
+
+<section id="consulta" class="consulta">
+  <div class="container">
+    <h2>Como é o atendimento</h2>
+    <p class="subtitulo">
+  Atendimento realizado de forma presencial e por teleconsulta, com o mesmo cuidado, atenção e qualidade.
+</p>
+
+<div class="accordion-mini">
+
+  <details>
+    <summary>Consulta presencial e teleconsulta</summary>
+    <p>
+      A Dra. Luiza Fabres realiza atendimentos tanto presenciais quanto por teleconsulta, permitindo que pacientes de diferentes localidades tenham acesso a uma avaliação especializada.
+    </p>
+    <p>
+      Em ambos os formatos, a consulta é conduzida com escuta atenta, análise detalhada e orientação clara, garantindo um cuidado individualizado e completo.
+    </p>
+  </details>
+
+  <details>
+    <summary>Duração da consulta</summary>
+    <p>
+      As consultas têm duração média de uma hora, permitindo uma avaliação cuidadosa e sem pressa.
+    </p>
+  </details>
+
+  <details>
+    <summary>Avaliação completa</summary>
+    <p>
+      São analisados histórico de saúde, sintomas, exames, hábitos de vida e alimentação, proporcionando uma visão ampla do quadro clínico.
+    </p>
+  </details>
+
+  <details>
+    <summary>Plano de tratamento</summary>
+    <p>
+      Ao final, é elaborado um plano de cuidado individualizado, com orientações médicas, estratégias práticas e, quando necessário, solicitação de exames e tratamento medicamentoso.
+    </p>
+  </details>
+<details>
+  <summary>Consulta de retorno</summary>
+  <p>
+    Após a consulta inicial, o paciente tem direito a uma consulta de retorno para acompanhamento das orientações realizadas, avaliação de resultados de exames e ajustes no plano de tratamento.
+  </p>
+  <p>
+    O retorno pode ser realizado em até 30 dias, contribuindo para um acompanhamento mais seguro e efetivo da evolução clínica.
+  </p>
+</details>
+
+</div>
+    </div>
+  </div>
+</section>
+
+<div class="card">
+  <h3>Forma de atendimento</h3>
+
+  <p>
+    A Dra. Luiza Fabres realiza seus atendimentos de forma <strong>exclusivamente particular</strong>.
+  </p>
+
+  <p>
+  Ao longo de sua trajetória, a Dra. Luiza também já atuou por meio de convênios. Com o tempo, optou por direcionar seu atendimento para um modelo particular, que permite oferecer consultas com maior tempo de dedicação, escuta atenta e avaliação detalhada de cada paciente.
+</p>
+
+<p>
+  Esse formato possibilita um cuidado mais individualizado, com análise aprofundada do histórico de saúde e definição de condutas mais adequadas às necessidades de cada caso.
+</p>
+
+  <p>
+    As consultas têm duração média de uma hora e incluem avaliação clínica completa, orientação detalhada e acompanhamento direcionado conforme a necessidade de cada paciente.
+  </p>
+
+  <p>
+    <strong>Valor da consulta:</strong> R$ 450,00
+  </p>
+
+  <p>
+   Fornecemos Nota Fiscal para fins de reembolso junto ao seu plano de saúde, de acordo com as regras de cada operadora.
+  </p>
+</div>
+
+<section id="blog" class="blog">
+  <div class="container">
+    <h2>Conteúdos sobre saúde digestiva e hepática</h2>
+    <p class="subtitulo">
+      Informações claras e confiáveis para ajudar o paciente a compreender melhor sintomas, prevenção e acompanhamento médico.
+    </p>
+
+    <div class="accordion-mini">
+
+  <details>
+    <summary>Como prevenir doenças do fígado</summary>
+    <p>
+      O fígado participa de funções essenciais do organismo e, muitas vezes, pode adoecer sem provocar sintomas claros no início. Por isso, a prevenção é um ponto importante no cuidado com a saúde.
+    </p>
+    <p>
+      Entre as medidas mais relevantes estão evitar o consumo excessivo de álcool, manter uma alimentação equilibrada, controlar o peso, praticar atividade física, acompanhar taxas metabólicas como glicose e colesterol e não usar medicamentos sem orientação médica.
+    </p>
+    <p>
+      Em alguns casos, a vacinação e o acompanhamento periódico também ajudam a identificar alterações precocemente, antes que a doença avance.
+    </p>
+  </details>
+
+  <details>
+    <summary>Alimentação e digestão</summary>
+    <p>
+      A alimentação influencia diretamente o funcionamento do aparelho digestivo. Em muitos casos, desconfortos como estufamento, azia, sensação de má digestão, alteração do intestino e peso abdominal podem estar relacionados a hábitos alimentares inadequados ou à forma como cada organismo responde a certos alimentos.
+    </p>
+    <p>
+      Uma rotina alimentar mais equilibrada, com boa hidratação, consumo adequado de fibras e refeições organizadas, costuma contribuir para melhora dos sintomas digestivos e também para o cuidado do fígado.
+    </p>
+  </details>
+
+  <details>
+    <summary>Gastrite, refluxo e sinais de alerta</summary>
+    <p>
+      Queimação, azia, sensação de alimento voltando, dor no estômago, empachamento e desconforto após as refeições são queixas comuns. Embora possam estar associadas a quadros como gastrite e refluxo, esses sintomas precisam ser avaliados com cuidado.
+    </p>
+    <p>
+      Quando os sintomas são persistentes, frequentes ou impactam a qualidade de vida, vale buscar avaliação especializada.
+    </p>
+  </details>
+
+  <details>
+    <summary>Hepatites: por que precisam de acompanhamento</summary>
+    <p>
+      As hepatites podem ter diferentes causas e comportamentos. Algumas se resolvem, enquanto outras exigem controle e seguimento ao longo do tempo.
+    </p>
+    <p>
+      Muitas doenças hepáticas evoluem de forma silenciosa. Isso significa que a pessoa pode se sentir relativamente bem mesmo quando já existe inflamação ou lesão no fígado. Por isso, o acompanhamento médico é importante para avaliar atividade da doença, risco de progressão e necessidade de tratamento.
+    </p>
+  </details>
+
+  <details>
+    <summary>Quando os exames do fígado são importantes</summary>
+    <p>
+      Exames laboratoriais e de imagem podem ser fundamentais para investigar alterações do fígado, acompanhar doenças já diagnosticadas e orientar decisões clínicas com mais segurança.
+    </p>
+    <p>
+      Mais do que simplesmente pedir exames, o importante é saber quando eles são indicados e como utilizar essas informações para montar um plano de cuidado individualizado.
+    </p>
+  </details>
+
+</div>
+    </div>
+  </div>
+</section>
+
+<section id="publicacoes" class="publicacoes">
+  <div class="container">
+    <h2>Produção científica</h2>
+    <p class="subtitulo">
+      Participação na elaboração de capítulos em manuais voltados à formação de médicos clínicos e residentes.
+    </p>
+
+    <div class="accordion-mini">
+
+      <details>
+        <summary>Encefalopatia Hepática</summary>
+        <p>
+          Capítulo do Manual de Hepatologia para Clínicos e Residentes (2018), abordando diagnóstico, manejo clínico e acompanhamento dessa importante complicação das doenças hepáticas.
+        </p>
+      </details>
+
+      <details>
+        <summary>Síndrome Hepatorrenal</summary>
+        <p>
+          Capítulo do Manual de Hepatologia para Clínicos e Residentes (2018), com enfoque na identificação, fisiopatologia e estratégias de tratamento dessa condição grave associada à doença hepática avançada.
+        </p>
+      </details>
+
+      <details>
+        <summary>Cirurgia no paciente com doença hepática avançada</summary>
+        <p>
+          Capítulo do Manual de Hepatologia para Clínicos e Residentes (2018), discutindo riscos, avaliação pré-operatória e cuidados necessários em pacientes com comprometimento hepático.
+        </p>
+      </details>
+
+      <details>
+        <summary>Doença do refluxo gastroesofágico e esôfago de Barrett</summary>
+        <p>
+          Capítulo do Manual de Gastroenterologia para Clínicos e Residentes (2018), abordando diagnóstico, tratamento e acompanhamento dessas condições frequentes na prática clínica.
+        </p>
+      </details>
+
+      <details>
+        <summary>Doenças da vesícula biliar</summary>
+        <p>
+          Capítulo do Manual de Gastroenterologia para Clínicos e Residentes (2018), incluindo doença biliar alitiásica, colesterolose, adenomiomatose e pólipos da vesícula biliar.
+        </p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<section id="consultorio" class="consultorio">
+  <div class="container">
+    <h2>Conheça o consultório</h2>
+    <p class="subtitulo">
+      Um ambiente pensado para acolher o paciente com conforto, privacidade e tranquilidade durante o atendimento.
+    </p>
+
+    <div class="consultorio-grid">
+      <div class="foto-box">
+        <img src="recepcao1.jpeg" alt="Consultório">
+        <div class="foto-legenda">Recepção e ambiente de chegada</div>
+      </div>
+
+      <div class="foto-box">
+        <img src="consultorio1.jpeg" alt="Sala de atendimento">
+        <div class="foto-legenda">Consultório</div>
+      </div>
+
+      <div class="foto-box">
+        <img src="consultorio2.jpeg" alt="Detalhes do consultório">
+        <div class="foto-legenda">Um pouco mais do Consultório</div>
+      </div>
+<div class="foto-box">
+        <img src="recepcao2.jpeg" alt="Recepção do consultório">
+        <div class="foto-legenda">Ali você serve tua água e prepara teu cafezinho</div>
+      </div>
+
+      <div class="foto-box">
+        <img src="consultorio3.jpeg" alt="Sala de atendimento">
+        <div class="foto-legenda">As cadeiras que te acolherão para o atendimento</div>
+      </div>
+
+      <div class="foto-box">
+        <img src="recepcao3.jpeg" alt="Detalhes do consultório">
+        <div class="foto-legenda">É ali que você se ajeita para logo ser chamado para a consulta</div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
 
       <div class="registro">
         <strong>Registro profissional:</strong><br>
@@ -504,119 +864,16 @@
         RQE 10576 – Gastroenterologia<br>
         RQE 11334 – Hepatologia
       </div>
-    </div>
-  </div>
-</section>
-
-<section id="servicos">
-  <div class="container">
-    <h2>Serviços</h2>
-    <p class="subtitulo">
-      Atendimento voltado à prevenção, diagnóstico e tratamento de doenças do aparelho digestivo e do fígado.
-    </p>
-
-    <div class="servicos-grid">
-      <div class="item-box">
-        <h3>Doenças do fígado</h3>
-        <p>Hepatites, esteatose hepática, cirrose e acompanhamento especializado.</p>
-      </div>
-
-      <div class="item-box">
-        <h3>Refluxo e gastrite</h3>
-        <p>Investigação de azia, queimação, dor abdominal e desconforto digestivo.</p>
-      </div>
-
-      <div class="item-box">
-        <h3>Intestino irritável</h3>
-        <p>Avaliação de sintomas intestinais persistentes e tratamento individualizado.</p>
-      </div>
-
-      <div class="item-box">
-        <h3>Constipação e diarreia</h3>
-        <p>Investigação clínica de alterações do hábito intestinal.</p>
-      </div>
-
-      <div class="item-box">
-        <h3>Intolerâncias alimentares</h3>
-        <p>Acompanhamento em doença celíaca e suspeitas de sensibilidade alimentar.</p>
-      </div>
-
-      <div class="item-box">
-        <h3>Check-up digestivo</h3>
-        <p>Prevenção, rastreio e acompanhamento da saúde digestiva e hepática.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="blog" class="blog">
-  <div class="container">
-    <h2>Como Cuidar da Saúde Digestiva e Hepática</h2>
-    <p class="subtitulo">
-      Conteúdos informativos para orientar pacientes e promover prevenção em saúde.
-    </p>
-
-    <ul class="blog-lista">
-      <li><a href="#prevencao">Como prevenir doenças do fígado</a></li>
-      <li><a href="#alimentos">Alimentos que ajudam na digestão</a></li>
-      <li><a href="#gastrite">Sintomas de gastrite e refluxo</a></li>
-      <li><a href="#hepatite">Hepatite</a></li>
-      <li><a href="#exames">Exames do fígado</a></li>
-    </ul>
-
-    <div class="posts-detalhados">
-      <div class="post-card" id="prevencao">
-        <h3>Como prevenir doenças do fígado</h3>
-        <p>
-          Evite álcool em excesso, mantenha alimentação equilibrada, pratique exercícios e faça exames regulares.
-          O acompanhamento médico é importante para identificar alterações ainda no início.
-        </p>
-      </div>
-
-      <div class="post-card" id="alimentos">
-        <h3>Alimentos que ajudam na digestão</h3>
-        <p>
-          Frutas, fibras, probióticos e boa hidratação ajudam no funcionamento intestinal e contribuem
-          para uma rotina digestiva mais equilibrada.
-        </p>
-      </div>
-
-      <div class="post-card" id="gastrite">
-        <h3>Sintomas de gastrite e refluxo</h3>
-        <p>
-          Azia, queimação, dor abdominal e sensação de estufamento são sinais frequentes.
-          Quando persistentes, merecem avaliação médica.
-        </p>
-      </div>
-
-      <div class="post-card" id="hepatite">
-        <h3>Hepatite</h3>
-        <p>
-          Trata-se de uma condição que pode evoluir de forma silenciosa. A prevenção inclui vacinação,
-          cuidados específicos e acompanhamento profissional.
-        </p>
-      </div>
-
-      <div class="post-card" id="exames">
-        <h3>Exames do fígado</h3>
-        <p>
-          Exames laboratoriais e de imagem ajudam na investigação e no diagnóstico precoce
-          de várias doenças hepáticas.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section id="contato" class="contato">
   <div class="container">
     <h2>Contato</h2>
     <p class="subtitulo">
-      Agende sua consulta e cuide da sua saúde digestiva e hepática com atendimento especializado.
+      Agende sua consulta e receba um atendimento cuidadoso, com avaliação completa da saúde digestiva e hepática.
     </p>
 
     <div class="card contato-info">
-      <p><strong>WhatsApp:</strong> (27) 99506-5091</p>
+      <p><strong>WhatsApp:</strong> (27) 99506-5091 Atendemos ligações e ouvimos áudios</p>
 
       <p>
         <strong>Endereço:</strong><br>
@@ -626,7 +883,7 @@
 
       <div class="mapa-btn">
         <a href="https://www.google.com/maps?q=Rua+João+Pessoa+de+Matos,+530,+Vila+Velha+ES" target="_blank" class="btn btn-principal">
-          Ver no mapa
+          Ver localização
         </a>
       </div>
     </div>
@@ -637,10 +894,7 @@
   <p>© 2026 Dra. Luiza Fabres do Carmo – Todos os direitos reservados</p>
 </footer>
 
-<a href="https://wa.me/5527995065091?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Luiza"
-   target="_blank"
-   class="whatsapp-fixo"
-   aria-label="WhatsApp">
+<a href="https://wa.me/5527995065091?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Luiza" target="_blank" class="whatsapp-fixo" aria-label="WhatsApp">
   <svg viewBox="0 0 24 24" aria-hidden="true">
     <path d="M20.52 3.48A11.86 11.86 0 0 0 12.07 0C5.53 0 .19 5.34.19 11.9c0 2.1.55 4.14 1.6 5.95L0 24l6.35-1.66a11.9 11.9 0 0 0 5.72 1.46h.01c6.54 0 11.88-5.34 11.88-11.9 0-3.18-1.24-6.16-3.44-8.42zM12.08 21.8h-.01a9.9 9.9 0 0 1-5.05-1.39l-.36-.21-3.77.99 1.01-3.68-.24-.38a9.9 9.9 0 0 1-1.52-5.24c0-5.46 4.45-9.9 9.92-9.9 2.65 0 5.14 1.03 7.01 2.9a9.84 9.84 0 0 1 2.9 7c0 5.46-4.45 9.9-9.9 9.9zm5.43-7.37c-.3-.15-1.77-.87-2.05-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.08-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.01-1.04 2.47s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.48.71.31 1.27.5 1.7.64.71.22 1.36.19 1.87.11.57-.08 1.77-.72 2.02-1.42.25-.69.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35z"/>
   </svg>
